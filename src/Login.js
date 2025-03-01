@@ -28,9 +28,6 @@ const Login = () => {
     }
     }
   }
-  function signup(){
-    navigate('/Signup')
-  }
   return (
     <div>
     <div className="container"> 
@@ -60,7 +57,6 @@ const Login = () => {
        }}
      />
      <button type="submit">Log in</button>
-     <button onClick={signup}>Sign up</button>
    </form>
  
  </div>
