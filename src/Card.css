@@ -1,0 +1,15 @@
+.output{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    flex-direction: column;
+}
+#button{
+    margin-right: 0px;
+}
+#h3,#h4,#h5{
+    color: black;
+    
+}

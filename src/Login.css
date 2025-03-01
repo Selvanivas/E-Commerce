@@ -1,0 +1,137 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  animation: anime1 2s linear infinite ; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(#79abb3, #5a97b5  );
+}
+input{
+        border: none;
+        border-bottom: 3px solid rgb(3, 131, 186); 
+        transition: 0.5s ease-in;
+        font-size: 20px;
+        margin-bottom: 5%;
+        color: white;
+    }
+button{
+        border: 2px solid  rgb(3, 131, 186);
+        border-radius: 7px;
+        width: max-content;
+        font-size: 20px;
+        background-color: aqua;
+        transition: 0.5s ease-in;
+    }    
+.loginpage{
+    width:300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: 5px solid white;
+    animation: anime 5s linear infinite ease-in-out; 
+   
+}
+#formbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    width:max-content;
+    padding: 7px;
+    margin: 5px;
+    background-color:transparent  ;
+    opacity: 0.8;
+    transition: 0.3s ease-in;
+    color: white;
+
+
+}
+#formbox:hover{
+    cursor: pointer;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius:10% ;
+    background-color:transparent;
+    color: black   ;
+}
+input:hover{
+    transform: scale(0.9);
+    transition: 0.3s ease-in;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(109, 138, 152);
+    cursor: pointer;
+  
+    
+}
+.loginpage:hover{
+    cursor: pointer;
+    background: linear-gradient(#376975 ,#0d110f);
+
+}
+button:hover{
+    border-radius: 5px;
+    border: 3px solid rgb(184, 149, 93);
+    transform: scale(0.8);
+    cursor: pointer;
+    background-color: rgb(60, 75, 136);
+    color: white;
+    transition: 0.5s ease-in;
+}
+#heading{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  border-right: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 5ch;
+  animation: typing 2s steps(3),anime1 0.5s 4, removeBorder 0.5s steps(3) reverse ;
+  text-align: center;
+  color:aquamarine;
+}
+#hel{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  border-right: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 12ch;
+  animation: typing 4s steps(12),anime1 1s 5, removeBorder 0.5s steps(5) forwards ;
+  color:aquamarine;
+}
+@keyframes anime {
+  from {
+    background: linear-gradient(#12C2E9,  #0af1f9 );
+  }
+  to {
+    background: linear-gradient( #2da7cc, #65c5db );
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes anime1 {
+  50%{
+    color: #f1ac16;
+    border-color: transparent;
+  }
+}
+
+@keyframes removeBorder {
+  100% {
+    border-right: none;
+  }
+}
